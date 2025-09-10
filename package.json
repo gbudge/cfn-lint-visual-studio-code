@@ -49,8 +49,7 @@
   "main": "./client/out/extension",
   "activationEvents": [
     "onLanguage:yaml",
-    "onLanguage:json",
-    "onCommand:extension.sidePreview"
+    "onLanguage:json"
   ],
   "extensionDependencies": [],
   "homepage": "https://github.com/awslabs/aws-cfn-lint-visual-studio-code/blob/main/README.md",
