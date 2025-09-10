@@ -13,14 +13,14 @@
 		"node": "*"
 	},
 	"dependencies": {
-		"@types/node-fetch": "^2.6.9",
+		"@types/node-fetch": "^2.6.13",
 		"fast-json-patch": "^3.1.1",
-		"node-fetch": "^2.7.0",
+		"node-fetch": "^3.3.2",
 		"semver": "^7.7.2",
-		"vscode-languageserver": "^9.0.0",
+		"vscode-languageserver": "^9.0.1",
 		"vscode-languageserver-textdocument": "^1.0.12",
 		"vscode-languageserver-types": "^3.17.5",
-		"vscode-uri": "^3.0.8",
+		"vscode-uri": "^3.1.0",
 		"yaml-language-server": "^1.18.0"
 	},
 	"scripts": {}
