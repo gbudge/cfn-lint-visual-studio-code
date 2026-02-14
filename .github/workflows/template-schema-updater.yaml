@@ -3,19 +3,26 @@ on:
   schedule:
     - cron: '0 */8 * * *'
   workflow_dispatch: # Enables on-demand/manual triggering: https://docs.github.com/en/free-pro-team@latest/actions/managing-workflow-runs/manually-running-a-workflow
+
+permissions:
+  contents: read
+
 jobs:
   schema-updater:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
         with:
           repository: aws-cloudformation/aws-cloudformation-template-schema
           path: aws-cloudformation-template-schema
           ref: main
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
-          python-version: '3.9'
+          python-version: '3.13'
       - name: Install Poetry
         uses: snok/install-poetry@v1
       - run: |
